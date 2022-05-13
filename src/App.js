@@ -3,6 +3,7 @@ import AllMeetupsPage from "./pages/AllMeetups";
 import NewMeetupPage from "./pages/NewMeetup";
 import FavoritesPage from "./pages/Favorites";
 import MainNavigation from "./components/layout/MainNavigation";
+
 function App() {
   return (
     <div>
@@ -11,10 +12,12 @@ function App() {
         <Route path="/" exact>
           <AllMeetupsPage />
         </Route>
-        <Route path="/new-meetup">
+
+        <Route path="/new-meetup" exact>
           <NewMeetupPage />
         </Route>
-        <Route path="/favorites">
+
+        <Route path="/favorites" exact>
           <FavoritesPage />
         </Route>
       </Switch>
