@@ -1,10 +1,10 @@
 function NewMeetupPage() {
   console.log("hello");
   return (
-    <div>
-      <h1>New Meetup!</h1>
+    <section>
+      <h1>Add New Meetup</h1>
       <p>NewMeetupPage</p>
-    </div>
+    </section>
   );
 }
 
