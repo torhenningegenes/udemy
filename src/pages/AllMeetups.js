@@ -27,7 +27,9 @@ function AllMeetupsPage() {
         setIsLoading(false);
         setLoadedMeetups(meetups);
       })
-      .catch(console.log("Error!"));
+      .catch((error) => {
+        console.log("Error!");
+      });
   }, []);
 
   if (isLoading) {
